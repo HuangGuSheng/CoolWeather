@@ -39,7 +39,7 @@ public class CoolWeatherDB {
     private CoolWeatherDB(Context context) {
         CoolWeatherOpenHelper dbHelper = new CoolWeatherOpenHelper(context, DB_NAME,
                 null, VERSION);
-        db = dbHelper.getWritableDatabase();
+        db = dbHelper.getWritableDatabase();        //建立数据库
     }
 
     /**
@@ -164,6 +164,7 @@ public class CoolWeatherDB {
         if (cursor != null) {
             cursor.close();
         }
+
         return list;
     }
 
