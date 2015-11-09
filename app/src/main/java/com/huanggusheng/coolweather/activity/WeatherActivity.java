@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.huanggusheng.coolweather.R;
+import com.huanggusheng.coolweather.service.AutoUpdateService;
 import com.huanggusheng.coolweather.util.HttpCallBackListener;
 import com.huanggusheng.coolweather.util.HttpUtil;
 import com.huanggusheng.coolweather.util.Utility;
@@ -169,6 +170,9 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
         weather_temp.setVisibility(View.VISIBLE);
         weatherDesp_tv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.INVISIBLE);
+
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     @Override
