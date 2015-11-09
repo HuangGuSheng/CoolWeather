@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f520364a"
+    android:background="#20364a"
     >
     <TextView
         android:id="@+id/cityname_tv"
@@ -96,4 +96,30 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/temp_layout"
         android:text=""/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <ImageButton
+            android:id="@+id/switch_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/home"
+            android:scaleType="fitXY"
+            android:background="#f520364a"
+            />
+        <ImageButton
+            android:id="@+id/refresh_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/refresh"
+            android:scaleType="fitXY"
+            android:background="#f520364a"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
 </RelativeLayout>
